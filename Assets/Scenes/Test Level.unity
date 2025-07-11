@@ -584,6 +584,7 @@ GameObject:
   - component: {fileID: 659028875}
   - component: {fileID: 659028876}
   - component: {fileID: 659028877}
+  - component: {fileID: 659028878}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -713,6 +714,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &659028878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659028872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0f12d67bd0d6047bda9b7d9928e658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 5
 --- !u!1 &734703410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1204,7 @@ MonoBehaviour:
   target: {fileID: 659028874}
   freezeVertical: 1
   freezeHorizontal: 0
-  clampPosition: 0
+  clampPosition: 1
   clampMin: {fileID: 1911439472}
   clampMax: {fileID: 490252405}
   theCamera: {fileID: 1068521002}

@@ -20,7 +20,10 @@ public class DamagePlayer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
+            //FindFirstObjectByType<PlayerHealthController>().DamagePlayer();
+
+            PlayerHealthController.instance.DamagePlayer();
         }
     }
 }
